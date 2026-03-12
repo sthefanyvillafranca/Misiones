@@ -100,6 +100,27 @@ public class GestionDeMisiones {
             }
         }
         return misionBuscado;
+         */
+    }
+
+    public Mision eliminarMision(int id){ /
+        Mision misionEliminada = null;
+
+        misionEliminada = buscarMision(id);
+        if(misionEliminada != null){
+        misiones.remove(misionEliminada);
+        }
+
+        return misionEliminada;
+    }
+
+    /*
+    public eliminarMisionConConfirmacion (int id){
+        // buscar
+        // devolver resultado
+        // si confirma eliminamos
+
+
     }
 
     // study practicar como hacer esto con el while
