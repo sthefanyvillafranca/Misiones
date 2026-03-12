@@ -73,6 +73,23 @@ public class GestionDeMisiones {
      */
     public Mision buscarMision(int id) {
 
+        Mision mision = null;
+        boolean sigueBuscando = true;
+        int posicion = 0;
+
+        while ( !misiones.isEmpty() && sigueBuscando ) {
+            mision = misiones.get(posicion);
+
+            if(mision != null && mision.getId() == id){
+                // study este metodo
+                sigueBuscando = false;
+            }
+            posicion++;
+        }
+
+        return mision;
+
+        /*
         Mision misionBuscado = null;
         boolean sigueBuscando = true;
 
