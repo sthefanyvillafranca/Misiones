@@ -123,5 +123,27 @@ public class GestionDeMisiones {
 
     }
 
+/ POLIMORFISMO: dos o más metodos que hacen lo mismo y tienen el mismo nombre, y reciben distintos tipos de parámetros y no tiene por qué hacer lo mismo.
+
+     */
+
+    public String eliminarMision(Mision mision){
+        String respuesta;
+
+        respuesta = "No se ha podido eliminar la mision: ";
+
+        if ( mision != null){
+            misiones.remove(mision);
+            respuesta= " Se ha eliminado la mision: ";
+        }
+        return respuesta + mision.toString();
+    }
+
+    public int contarMision(){
+
+        return misiones.size();
+    }
+
+
     // study practicar como hacer esto con el while
 }
