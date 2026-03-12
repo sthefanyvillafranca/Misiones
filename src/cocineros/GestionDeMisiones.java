@@ -69,7 +69,7 @@ public class GestionDeMisiones {
     /**
      * "Recorre" la coleccion de misiones de la que coincida con
      * @param id
-     * @return
+     * @return la mision o nulo
      */
     public Mision buscarMision(int id) {
 
@@ -139,6 +139,10 @@ public class GestionDeMisiones {
         return respuesta + mision.toString();
     }
 
+    /**
+     * Cuenta las misiones del array list
+     * @return un entero
+     */
     public int contarMision(){
 
         return misiones.size();
@@ -146,4 +150,5 @@ public class GestionDeMisiones {
 
 
     // study practicar como hacer esto con el while
+    // study diferencias entre hacerlo everything en el main y hacerlo ahora desde una clase "gestora".
 }
